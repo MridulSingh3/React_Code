@@ -1,0 +1,180 @@
+body {
+    background: #f5f7fb;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Title */
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+}
+
+/* Refresh Button */
+
+.refreshBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #4f46e5;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.refreshBtn:hover {
+    background: #4338ca;
+}
+
+/* Product Grid */
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Card */
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Image */
+
+.imgBox {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgBox img {
+    max-height: 180px;
+    object-fit: contain;
+}
+
+/* Content */
+
+.content {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.content h3 {
+    color: #16a34a;
+    font-size: 20px;
+}
+
+.content p {
+    color: #555;
+}
+
+/* Button */
+
+.btn {
+    margin-top: 12px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #111827;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #374151;
+}
+
+/* Modal */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 400px;
+    text-align: center;
+    animation: popup 0.3s ease;
+}
+
+.modal-content img {
+    height: 200px;
+    object-fit: contain;
+}
+
+.modal-content button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border: none;
+    background: #ef4444;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+@keyframes popup {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Error */
+
+.errorBox {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.errorText {
+    color: red;
+}
+
+.retryBtn {
+    margin-top: 15px;
+    padding: 10px 18px;
+    border: none;
+    background: #4f46e5;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
